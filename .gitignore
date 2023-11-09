@@ -1,0 +1,25 @@
+# Dependency directories
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+/.changelog
+
+
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Optional eslint cache
+.eslintcache
+
+#Misc
+.DS_Store
+
+# vercel
+.vercel
