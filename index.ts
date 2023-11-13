@@ -2,6 +2,12 @@ import express, { Request, Response } from "express";
 import colors from "colors";
 import transactionRoutes from "./src/routes/transactionRoutes";
 import cors from "cors";
+import { connectDB } from "./src/config/database";
+import dotenv from "dotenv";
+
+//Config and Connect DB
+dotenv.config();
+connectDB();
 
 const PORT = process.env.PORT || 5000;
 const ENV = process.env.NODE_ENV || "development";
